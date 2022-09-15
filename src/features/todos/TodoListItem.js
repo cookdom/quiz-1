@@ -52,15 +52,6 @@ const TodoListItem = ({ id }) => {
 					<div className="todo-text">{text}</div>
 				</div>
 				<div className="segment buttons">
-					<select
-						className="colorPicker"
-						value={color}
-						style={{ color }}
-						onChange={handleColorChanged}
-					>
-						<option value=""></option>
-						{colorOptions}
-					</select>
 				</div>
 			</div>
 		</li>
