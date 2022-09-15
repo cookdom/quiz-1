@@ -97,21 +97,9 @@ const Footer = () => {
     dispatch({ type: 'filters/statusFilterChanged', payload: status })
 
   return (
-    <footer className="footer">
-      <div className="actions">
-        <h5>Actions</h5>
-        <button className="button" onClick={onMarkCompletedClicked}>
-          Mark All Completed
-        </button>
-        <button className="button" onClick={onClearCompletedClicked}>
-          Clear Completed
-        </button>
-      </div>
-
-      <RemainingTodos count={todosRemaining} />
-      <StatusFilter value={status} onChange={onStatusChange} />
-      <ColorFilters value={colors} onChange={onColorChange} />
-    </footer>
+  <>
+    <footer>Footer</footer>
+  </>
   )
 }
 
